@@ -1,0 +1,23 @@
+ <!-- desde aquí se inicia el ciclo para iterar sobre la api los datos ingresados  -->
+
+ @for (item of items; track item.id) {    
+  <ion-list>
+    <ion-item>
+      
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{item.title}}</ion-card-title>
+          <ion-card-subtitle>Frase numero:  {{item.id}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          {{item.body}}
+        </ion-card-content>
+      </ion-card>
+
+
+    </ion-item>
+  </ion-list>
+
+}
+
